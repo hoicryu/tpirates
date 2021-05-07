@@ -10,7 +10,9 @@ import Main from "./pages/main/Main"
 function Routes(props) {
   return (
     <Router>
-      <Route exact path="/" component={Main} />
+      <Switch>
+        <Route exact path="/시장" component={Main} />
+      </Switch>
     </Router>
   )
 }
