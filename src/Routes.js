@@ -6,12 +6,14 @@ import {
 } from 'react-router-dom';
 
 import Main from "./pages/main/Main"
+import StoreDetail from "./pages/main/StoreDetail"
 
 function Routes(props) {
   return (
     <Router>
       <Switch>
-        <Route exact path="/시장" component={Main} />
+        <Route exact path="/" component={Main} />
+        <Route exact path="/store/:store" component={StoreDetail} />
       </Switch>
     </Router>
   )

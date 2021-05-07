@@ -99,9 +99,7 @@ function Main() {
 
   const history = useHistory();
   const goToStoreDetailPage = (uri) => {
-    history.push({
-      pathname: `/시장${uri}`,
-    });
+    history.push(`/store${uri}`);
   }
 
   return (
